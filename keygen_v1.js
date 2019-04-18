@@ -65,5 +65,6 @@ function printGenerate() {
     method = parseInt(document.getElementById("mtd").value);
     level = parseInt(document.getElementById("lvl").value);
     var myList = generate(iteration, method, level);
-    document.getElementById("output").innerHTML = myList.join('<br/>');
+    document.getElementById("output_codes").innerHTML = myList.join('<br/>');
+    document.getElementById("output_json").innerHTML = JSON.stringify(myList);
 }
